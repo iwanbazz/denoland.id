@@ -9,6 +9,12 @@
       "GITHUB_CLIENT_SECRET": "@gh-denoland-registry-client-secret"
     }
   },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next@canary"
+    }
+  ],
   "headers": [
     {
       "source": "/(_next|icons)/(.*)|/(browserconfig.xml|manifest.json|social.png)",
